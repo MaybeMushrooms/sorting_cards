@@ -13,19 +13,18 @@ class Guess
     @correct = correct?
     @feedback = feedback
   end
-  
-  def correct?
-    if @card_to_s == @response
-        return true
-  end
-end
 
-  def feedback(response)
+  def correct?
+    if @card_to_s == response
+       return true
+    end
+  end
+
+  def feedback
     if correct? 
-        return "Correct!"
+      return "Correct!"
     else 
-        return "Incorrect"
+      return "Incorrect."
     end
   end
 end
-
