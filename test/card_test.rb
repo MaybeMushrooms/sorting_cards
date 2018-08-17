@@ -8,9 +8,7 @@ class CardTest < Minitest::Test
     card = Card.new('Ace', 'Spades')
     assert_equal 'Ace', card.value
   end
-end
-
-class CardTest < Minitest::Test
+  
   def test_it_has_a_suit
     card = Card.new('Ace', 'Spades')
     assert_equal 'Spades', card.suit
